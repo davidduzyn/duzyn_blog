@@ -1,2 +1,47 @@
 baseurl: /duzyn_blog
 markdown: rdiscount
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://davidduzyn.github.io/duzyn_blog/'
+  media: 'media'
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "标签1"
+              value: "标签1"
+            - name: "标签2"
+              value: "标签2"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
